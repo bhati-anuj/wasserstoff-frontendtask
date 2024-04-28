@@ -2,10 +2,10 @@
 import React from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-import Event1 from "../public/Events.svg";
-import Event2 from "../public/Events 2.svg";
-import Event3 from "../public/Events 3.svg";
-import Event4 from "../public/Events 4.svg";
+import Collection1 from "../public/Collection1.svg";
+import Collection2 from "../public/Collection2.svg";
+import Collection3 from "../public/Collection3.svg";
+import Collection4 from "../public/Collection4.svg";
 import {
   Carousel,
   CarouselContent,
@@ -32,7 +32,7 @@ const CollectionCarousel = () => {
         <CarouselContent>
           <CarouselItem>
             <Image
-              src={Event1}
+              src={Collection1}
               alt="event image"
               width={"auto"}
               height={"auto"}
@@ -41,7 +41,7 @@ const CollectionCarousel = () => {
           </CarouselItem>
           <CarouselItem>
             <Image
-              src={Event2}
+              src={Collection2}
               alt="event image"
               width={600}
               height={400}
@@ -49,10 +49,10 @@ const CollectionCarousel = () => {
             />
           </CarouselItem>
           <CarouselItem>
-            <Image src={Event3} alt="event image" width={600} height={400} />
+            <Image src={Collection3} alt="event image" width={600} height={400} className="aspect-square" />
           </CarouselItem>
           <CarouselItem>
-            <Image src={Event4} alt="event image" width={600} height={400} />
+            <Image src={Collection4} alt="event image" width={600} height={400} className="aspect-square" />
           </CarouselItem>
         </CarouselContent>
         {/* <CarouselPrevious /> */}

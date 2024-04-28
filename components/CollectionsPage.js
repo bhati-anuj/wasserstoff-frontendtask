@@ -7,6 +7,7 @@ import person2 from "../public/Person 2.png";
 import person3 from "../public/Person 3.png";
 import brandng from "../public/Astrix Branding.svg";
 import CollectionCarousel from "./CollectionCarousel";
+import CardCarousel from "./CardCarousel";
 
 
 const CollectionsPage = () => {
@@ -28,11 +29,11 @@ const CollectionsPage = () => {
         </div>
        
       </div>
-      <div className="w-[8%] bg-[#B9A0FF] ">
-        <p className="[writing-mode:vertical-lr]  text-2xl overflow-hidden w-[2rem] h-auto animate-[wiggle_1s_ease-in-out_infinite]">
-          Event : Oasis Bus tour , JLN Stadium , Delhi * Collection Live : Meta
-          Lives , live on astrix
-        </p>
+      <div className="w-[6%] bg-[#B9A0FF] flex justify-center ">
+        <marquee direction="up" scrollamount="10" scrolldelay="0" className="[writing-mode:vertical-lr]  w-full items-center   text-2xl  w-[1.7rem]">
+          Event : Oasis Bus tour , JLN Stadium , Delhi * Collection Live : Meta Lives , live on astrix
+        
+        </marquee>
       </div>
       <div className="w-5/12 text-[#FFFFFF] p-4">
         <p className="text-2xl font-bold">Explore Youre First  Collectible</p>
@@ -52,8 +53,13 @@ const CollectionsPage = () => {
           <Image src={person3} alt="Person 3" width={40} height={40} className="ms-[-12px]" />
           <p className="text-xl font-medium ms-4">22k people interested</p>
         </div>
-        <div className="mt-12 flex justify-between items-end">
-          <Image src={joinnow} alt="join now" width={150} height={100} />
+        <div className="mt-12 ">
+          <p className="font-semibold text-base mb-4">Collectibles</p>
+          <CardCarousel/>
+          <div className="mt-8 flex justify-end w-10/12">
+
+          <Image src={joinnow} alt="join now " width={150} height={100} />
+          </div>
         </div>
       </div>
     </div>
