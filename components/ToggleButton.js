@@ -6,15 +6,15 @@ import CollectionsPage from "./CollectionsPage";
 const ToggleButton = () => {
   return (
     <>
-      <Tabs defaultValue="events" className="w-[400px]">
+      <Tabs defaultValue="events" className="w-[400px] ">
         <TabsContent value="events" className="w-screen" >
          <EventPage/>
         </TabsContent>
         <TabsContent value="collections" className="w-screen">
           <CollectionsPage/>
         </TabsContent>
-        <TabsList>
-          <TabsTrigger value="events">Events</TabsTrigger>
+        <TabsList className="bg-[#282B30] rounded-full ">
+          <TabsTrigger value="events" className="">Events</TabsTrigger>
           <TabsTrigger value="collections">Collections</TabsTrigger>
         </TabsList>
       </Tabs>

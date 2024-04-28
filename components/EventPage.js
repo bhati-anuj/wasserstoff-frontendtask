@@ -50,7 +50,7 @@ const EventPage = () => {
           <Image src={artist2} alt="Artist 1" width={150} height={100} />
           <Image src={artist3} alt="Artist 1" width={100} height={100} />
         </div>
-        <div className="mt-20 flex justify-between items-end">
+        <div className="mt-20 flex justify-around items-end">
           <Image src={barcode} alt="barcode" width={100} height={100} />
           <Image src={joinnow} alt="join now" width={150} height={100} />
         </div>
